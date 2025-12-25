@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   width: 100vw;
   height: 100vh;
@@ -26,6 +30,15 @@ body, #app, #app>div {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.pageWrap {
+  height: calc(100vh);
+
+  display: grid;
+  /* grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);*/
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr 4fr 4fr;
 }
 
 a {
@@ -69,18 +82,54 @@ button:focus-visible {
 }
 
 Header {
+  grid-column: 1 / -1;
   display: flex;
-  width: 100%-2em;
   align-items: center;
   justify-content: space-between;
   background-color: rgb(90, 22, 22);
-  height: 10%;
   padding-left: 1em;
   padding-right: 1em;
-  
 }
 
-p.time {
-  padding: 0px;
-  margin: 0px;
+#inputSection {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  background-color: darkslategray;
+
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+
+#outputSection {
+  grid-column: 1 / 5;
+  grid-row: 3 / 5;
+  background-color: #3c3c3c;
+
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+
+#statsSection {
+  grid-column: 5 / 6;
+  grid-row: 1 / 5;
+  background-color: brown;
+
+  padding: 1em;
+}
+
+button.big {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+button .small {
+  grid-column: span 1;
+  grid-row: span 1;
+
 }
