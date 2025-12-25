@@ -74,7 +74,8 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: linear-gradient(139deg, rgba(173, 0, 84, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(255, 106, 31, 1) 100%);
+
 }
 button:focus,
 button:focus-visible {
@@ -86,7 +87,7 @@ Header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(90, 22, 22);
+  background-color: #1a1a1a;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -94,7 +95,7 @@ Header {
 #inputSection {
   grid-column: 1 / 5;
   grid-row: 2 / 3;
-  background-color: darkslategray;
+  background-color: #3c3c3c;
 
   padding: 1em;
   display: grid;
@@ -113,12 +114,14 @@ Header {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1em;
+  border-top: solid 0.5px #1a1a1a;
 }
 
 #statsSection {
   grid-column: 5 / 6;
   grid-row: 1 / 5;
-  background-color: brown;
+  background: #ad0054;
+  background: linear-gradient(139deg, rgba(173, 0, 84, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(255, 106, 31, 1) 100%);
 
   padding: 1em;
 }
