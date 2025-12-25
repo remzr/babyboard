@@ -3,7 +3,7 @@ function Header() {
   return (
     <header>
       <h1>babyboard</h1>
-      <div class="time">11:32</div>
+      <p class="time">11:32</p>
     </header>
   )
 }
