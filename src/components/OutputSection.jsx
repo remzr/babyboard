@@ -4,10 +4,10 @@ function OutputSection() {
 
   return (
     <div id="outputSection">
-        <ButtonBig firstLine="Food" secondLine="Bottle" />
         <ButtonBig firstLine="Nasivin" secondLine="Nosespray" />
-        <ButtonSmall firstLine="Algifor" />
-        <ButtonSmall firstLine="Fever" />
+        <ButtonBig firstLine="Algifor" secondLine="Siroup"/>
+        <ButtonBig firstLine="Dafalgan" secondLine="Supo" />
+
     </div>
     )
 }

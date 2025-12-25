@@ -136,3 +136,8 @@ button .small {
   grid-row: span 1;
 
 }
+
+button .subtext {
+  font-size: 0.8rem;
+  font-weight: 200;;
+}
