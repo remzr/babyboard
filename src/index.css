@@ -1,3 +1,18 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body, #app, #app>div {
+  height: 100%;
+  width: 100%;
+}
+
+#App {
+  display: flex;
+  flex-direction: column;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -55,6 +70,17 @@ button:focus-visible {
 
 Header {
   display: flex;
-  width: 100%;
-  align-content: space-between;
+  width: 100%-2em;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(90, 22, 22);
+  height: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  
+}
+
+p.time {
+  padding: 0px;
+  margin: 0px;
 }
