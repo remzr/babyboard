@@ -1,11 +1,13 @@
+import { ButtonBig, ButtonSmall } from "./Button"
+
 function InputSection() {
 
   return (
     <div id="inputSection">
-        <button class="big"><strong>Diaper</strong><br />Poop</button>
-        <button class="big"><strong>Diaper</strong><br />Pee</button>
-        <button class="small"><strong>Vomit</strong></button>
-        <button class="small"><strong>Fever</strong></button>
+        <ButtonBig firstLine="Diaper" secondLine="Poop" />
+        <ButtonBig firstLine="Diaper" secondLine="Pee" />
+        <ButtonSmall firstLine="Vomit" />
+        <ButtonSmall firstLine="Fever" />
     </div>
     )
 }
