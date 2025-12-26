@@ -87,9 +87,24 @@ Header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1a1a1a;
+  background-color: #3c3c3c;
+  
   padding-left: 1em;
   padding-right: 1em;
+}
+
+Header>div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ad0054;
+  background: linear-gradient(139deg, rgba(173, 0, 84, 0.5) 0%, rgba(253, 29, 29, 0.5) 50%, rgba(255, 106, 31, 0.5) 100%);
+  color: white;
+  border-radius: 8px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 1em;
 }
 
 #inputSection {
@@ -121,7 +136,7 @@ Header {
   grid-column: 5 / 6;
   grid-row: 1 / 5;
   background: #ad0054;
-  background: linear-gradient(139deg, rgba(173, 0, 84, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(255, 106, 31, 1) 100%);
+  background: linear-gradient(139deg, rgba(173, 0, 84, 0.5) 0%, rgba(253, 29, 29, 0.5) 50%, rgba(255, 106, 31, 0.5) 100%);
 
   padding: 1em;
 }
