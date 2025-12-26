@@ -6,17 +6,44 @@ import OutputSection from './components/OutputSection'
 import StatsSection from './components/StatsSection'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [lastPoop, setLastPoop] = useState(0)
+  const [lastPee, setLastPee] = useState(0)
+  const [lastFood, setLastFood] = useState(0)
+  const [lastNasivin, setLastNasivin] = useState(0)
+  const [lastAlgifor, setLastAlgifor] = useState(0)
+  const [lastDafalgan, setLastDafalgan] = useState(0)
 
   const newEntry = (e) => {
-    console.log(e.target.id+" has been clicked.")
+    const timeFormat = {
+      weekday: "short", hour: "numeric", minute: "numeric"
+    }
+
+    if (e.target.id === "timerPoop") {
+      setLastPoop(new Date().toLocaleTimeString("en-CH").DateTimeFormat(["hh", "mm"]));
+    }
   };
 
   return (
     <div class="pageWrap">
       <Header />
-      <InputSection newEntry = {newEntry} />
-      <OutputSection newEntry = {newEntry} />
+      <InputSection 
+        newEntry = {newEntry}
+        lastPoop = {lastPoop}
+        lastPee = {lastPee}
+        lastFood = {lastFood}
+        lastNasivin = {lastNasivin}
+        lastAlgifor = {lastAlgifor}
+        lastDafalgan = {lastDafalgan} 
+      />
+      <OutputSection 
+        newEntry = {newEntry}
+        lastPoop = {lastPoop}
+        lastPee = {lastPee}
+        lastFood = {lastFood}
+        lastNasivin = {lastNasivin}
+        lastAlgifor = {lastAlgifor}
+        lastDafalgan = {lastDafalgan}  
+      />
       <StatsSection />
     </div>
   )
