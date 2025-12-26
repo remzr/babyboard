@@ -8,11 +8,15 @@ import StatsSection from './components/StatsSection'
 function App() {
   const [count, setCount] = useState(0)
 
+  const newEntry = (e) => {
+    console.log(e.target.id+" has been clicked.")
+  };
+
   return (
     <div class="pageWrap">
       <Header />
-      <InputSection />
-      <OutputSection />
+      <InputSection newEntry = {newEntry} />
+      <OutputSection newEntry = {newEntry} />
       <StatsSection />
     </div>
   )

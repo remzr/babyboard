@@ -1,12 +1,12 @@
-import { ButtonBig, ButtonSmall } from "./Button"
+import { ButtonBig } from "./Button"
 
-function OutputSection() {
+function OutputSection({newEntry}) {
 
   return (
     <div id="outputSection">
-        <ButtonBig firstLine="Nasivin" secondLine="Nosespray" />
-        <ButtonBig firstLine="Algifor" secondLine="Siroup"/>
-        <ButtonBig firstLine="Dafalgan" secondLine="Supo" />
+        <ButtonBig firstLine="Nasivin" secondLine="Nosespray" newEntry={newEntry} id="timerNose" />
+        <ButtonBig firstLine="Algifor" secondLine="Siroup" newEntry={newEntry} id="timerAlgifor"/>
+        <ButtonBig firstLine="Dafalgan" secondLine="Supo" newEntry={newEntry} id="timerDafalgan"/>
 
     </div>
     )

@@ -1,13 +1,6 @@
-export function ButtonBig({firstLine, secondLine}) {
+export function ButtonBig({id, firstLine, secondLine, newEntry}) {
 
   return (
-        <button className="big"><strong>{firstLine}</strong><br />{secondLine}<br /><span className="subtext">2h 30min</span></button>
-    )
-}
-
-export function ButtonSmall({firstLine}) {
-
-  return (
-        <button className="small"><strong>{firstLine}</strong></button>
+        <button id={id} className="big" onClick={newEntry}><strong>{firstLine}</strong><br />{secondLine}<br /><span className="subtext">2h 30min</span></button>
     )
 }
