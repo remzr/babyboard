@@ -13,13 +13,21 @@ function App() {
   const [lastAlgifor, setLastAlgifor] = useState(0)
   const [lastDafalgan, setLastDafalgan] = useState(0)
 
-  const newEntry = (e) => {
-    const timeFormat = {
-      weekday: "short", hour: "numeric", minute: "numeric"
-    }
+  function getTime() {
+    //Format time to output
+    const formatter = new Intl.DateTimeFormat("en-CH", {
+      weekday: "short", 
+      hour: "2-digit", 
+      minute: "2-digit",
+      hour12: false,
+    })
 
+    return formatter.format(new Date());
+  }
+
+  const newEntry = (e) => {
     if (e.target.id === "timerPoop") {
-      setLastPoop(new Date().toLocaleTimeString("en-CH").DateTimeFormat(["hh", "mm"]));
+      setLastPoop(`Last: ${getTime()}`);
     }
   };
 
