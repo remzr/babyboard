@@ -1,10 +1,10 @@
-function Header() {
+function Header({time}) {
 
   return (
     <header>
       <div>
         <h1>babyboard</h1>
-        <p class="time">11:32</p>
+        <p class="time">{time}</p>
       </div>
     </header>
   )
