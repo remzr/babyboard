@@ -28,7 +28,7 @@ function newQuote() {
 
   return (
     <aside id="statsSection">
-        <h2>Numerobis</h2>
+        <h2>Victor</h2>
         <p>12 Weeks</p>
         <p id="dailyQuote">{dailyQuote}</p>
         <button onClick={newQuote}>New Quote</button>
