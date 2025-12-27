@@ -28,8 +28,18 @@ function App() {
   const newEntry = (e) => {
     if (e.target.id === "timerPoop") {
       setLastPoop(`Last: ${getTime()}`);
+    } else if (e.target.id === "timerPee") {
+      setLastPee(`Last: ${getTime()}`);
+    } else if (e.target.id === "timerFood") {
+      setLastFood(`Last: ${getTime()}`);
+    } else if (e.target.id === "timerNasivin") {
+      setLastNasivin(`Last: ${getTime()}`);
+    } else if (e.target.id === "timerAlgifor") {
+      setLastAlgifor(`Last: ${getTime()}`);
+    } else if (e.target.id === "timerDafalgan") {
+      setLastDafalgan(`Last: ${getTime()}`);
     }
-  };
+  }
 
   return (
     <div class="pageWrap">
@@ -39,15 +49,9 @@ function App() {
         lastPoop = {lastPoop}
         lastPee = {lastPee}
         lastFood = {lastFood}
-        lastNasivin = {lastNasivin}
-        lastAlgifor = {lastAlgifor}
-        lastDafalgan = {lastDafalgan} 
       />
       <OutputSection 
         newEntry = {newEntry}
-        lastPoop = {lastPoop}
-        lastPee = {lastPee}
-        lastFood = {lastFood}
         lastNasivin = {lastNasivin}
         lastAlgifor = {lastAlgifor}
         lastDafalgan = {lastDafalgan}  

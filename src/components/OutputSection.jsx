@@ -8,7 +8,7 @@ function OutputSection({newEntry, lastNasivin, lastAlgifor, lastDafalgan}) {
           firstLine="Nasivin" 
           secondLine="Nosespray" 
           newEntry={newEntry} 
-          id="timerNose"
+          id="timerNasivin"
           lastEvent={lastNasivin} 
         />
         <ButtonBig 
