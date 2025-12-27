@@ -6,12 +6,12 @@ import OutputSection from './components/OutputSection'
 import StatsSection from './components/StatsSection'
 
 function App() {
-  const [lastPoop, setLastPoop] = useState(0)
-  const [lastPee, setLastPee] = useState(0)
-  const [lastFood, setLastFood] = useState(0)
-  const [lastNasivin, setLastNasivin] = useState(0)
-  const [lastAlgifor, setLastAlgifor] = useState(0)
-  const [lastDafalgan, setLastDafalgan] = useState(0)
+  const [lastPoop, setLastPoop] = useState(null)
+  const [lastPee, setLastPee] = useState(null)
+  const [lastFood, setLastFood] = useState(null)
+  const [lastNasivin, setLastNasivin] = useState(null)
+  const [lastAlgifor, setLastAlgifor] = useState(null)
+  const [lastDafalgan, setLastDafalgan] = useState(null)
 
   function getTime() {
     //Format time to output

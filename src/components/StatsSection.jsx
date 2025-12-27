@@ -3,7 +3,6 @@ import { useState } from "react";
 function StatsSection() {
 
 const [dailyQuote, setDailyQuote] = useState(null);
-const [dataIsLoaded, setDataIsLoaded] = useState(false);
 const [error, setError] = useState(null);
 
 function newQuote() {
