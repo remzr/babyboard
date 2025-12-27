@@ -6,6 +6,7 @@ import OutputSection from './components/OutputSection'
 import StatsSection from './components/StatsSection'
 
 function App() {
+  //Hooks for button timers
   const [lastPoop, setLastPoop] = useState(null)
   const [lastPee, setLastPee] = useState(null)
   const [lastFood, setLastFood] = useState(null)
@@ -40,6 +41,16 @@ function App() {
       setLastDafalgan(`Last: ${getTime()}`);
     }
   }
+
+  //Timer to update hook every minute
+  const [time, setTime] = useState(Date.now());
+  
+  useEffect(() => {
+    const interval = setInterval(() => setTime(Date.now()), 60);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <div class="pageWrap">
